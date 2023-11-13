@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Build") {
                        when {
-                          changeRequest( target: 'main' )
+                          changeRequest()
                         }
             steps {
                 echo "Hello World change Request"
